@@ -1,0 +1,98 @@
+body {
+    margin-top: 1em;
+    background-image: linear-gradient(to right, black, rgb(196, 196, 196) , black);
+}
+
+#content {
+    background-color: white;
+    width: 960px;
+    border: 1px solid black;
+    margin: auto;
+    min-height: 96vh;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    font-size: 22px;
+    padding: 12px 18px 12px 50px;
+    margin: 5px auto;
+    background-color: rgb(230, 230, 230);
+    transition: 0.2s;
+    user-select: none;
+    width: 600px;
+    list-style-type: none;
+    
+}
+
+ul li:nth-child(odd) {
+    background-color:  rgb(241, 241, 241);)
+}
+
+ul li:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    background-color:  rgb(126, 126, 126);
+    color: white;
+}
+
+ul li.checked::before {
+    content: '';
+    border-color: white;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    height: 16px;
+    width: 7px;
+    transform: rotate(45deg);
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 36px;
+    padding: 4px 16px;
+}
+
+.close:hover {
+    background-color: black;
+    color: white;
+}
+
+#heading {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#heading h1 {
+    font-size: 4em;
+    margin: 0px;
+    padding-bottom: 0.5em;
+}
+
+input {
+    font-size: 1.5em;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.2em 1em;
+    border-radius: 1px;
+}
+
+button:hover {
+    background-color: rgb(170, 170, 170);
+    cursor: pointer;
+    border-top: 1px solid rgb(136, 136, 136);
+    border-right: 1px solid  rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(190, 190, 190);
+    border-left: 1px solid rgb(136, 136, 136);
+}
+
