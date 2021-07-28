@@ -1,4 +1,4 @@
-# task-list-example
+# task-list
 
 To view this project, click the green Code button and download ZIP.
 
